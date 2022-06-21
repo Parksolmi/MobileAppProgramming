@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/future" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="  내년이면 4학년이고 곧 졸업을 앞둔다는 생각에 요즘 진로에 대한 고민이 늘어나고 있습니다. 학기 초반에는 뭘 해야 하는지, 개발자의 진로로 가는 것이 맞는지 등에 대한 생각들이 많아져 조금 방황을 하기도 했습니다. 그러나  최근에는 프론트엔드 개발자에 대한 관심이 높아져 계획을 세우고 앱/웹 관련 공부를 시작하고 있습니다." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/dog" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="  강아지를 좋아해서 키우고 싶지만 부모님의 반대와 여러 사정으로 못 키우고 있어서 유튜브에 나오는 영상들로 대리 만족을 느끼고 있습니다:) 제일 많이 보는 강아지는 '보리'라는 이름을 가진 말티즈 강아지입니다." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/exercise" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="  집에만 있는 시간이 늘어나다 보니 살이 많이 쪄서 운동을 해야 겠다고 생각하고 요즘에는 홈트를 시작했습니다. 살도 빼야하지만 체력과 건강을 위해서도 운동의 필요성을 느끼고 최대한 매일 하기 위해 노력하고 있습니다." />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutTab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/music" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="  자취방에 혼자 있을 때 정적이 싫어서 음악을 자주 틀어놓습니다. 요즘에는 영어 공부 한다고 드라마도 미드를 많이 보고 음악도 팝송을 많이 듣습니다. 최근 좋아하게 된 팝송은 'Stay'라는 노래 입니다." />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F000" >
+            </TabWidget>
+        </LinearLayout>
+</TabHost>

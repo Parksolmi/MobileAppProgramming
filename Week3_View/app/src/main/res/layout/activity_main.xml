@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    android:padding="30dp">
+
+    <!--
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="성별 선택" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성" />
+
+    <RadioButton
+        android:id= "@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="남성" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아래에 이름을 입력 : "
+        android:layout_margin = "20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="여기에 채우세요"
+        android:layout_margin = "20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:layout_margin="20dp"/>
+-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 1"/>
+    <Button
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 2"/>
+    <Button
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 4"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 5"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="버튼 6"/>
+
+</LinearLayout>

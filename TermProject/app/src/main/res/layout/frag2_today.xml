@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="오늘의 한 줄 작성"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="110dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/questionShowBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00ffffff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:id="@+id/questionShowBtnTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="질문보기"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/questionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:text="&quot;오늘을 한 번 더 산다면?&quot;"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editTxt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:lines="1"
+            android:privateImeOptions="defaultInputMode=Korean"/>
+
+        <ImageView
+            android:id="@+id/todayIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="310dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/iconlaughing"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                    <ImageButton
+                        android:id="@+id/icon_laughing"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconlaughing"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_angry"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconangry"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_kiss"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconkiss"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_crazy"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconcrazy"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_crying"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconcrying"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_like"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconlike"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_happy"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconhappy"></ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/icon_sick"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/iconsick"></ImageButton>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="490dp"
+            android:text="저장하기" />
+
+
+    </RelativeLayout>
+</LinearLayout>

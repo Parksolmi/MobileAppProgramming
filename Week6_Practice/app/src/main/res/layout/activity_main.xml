@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="20dp"
+        android:text="아이디"/>
+
+    <EditText
+        android:id="@+id/EditId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="당신이 좋아하는 계절은?"
+        android:textSize="18dp"
+        android:id="@+id/TextQues"/>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:orientation ="horizontal"
+        android:id="@+id/RadioG">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="봄"
+            android:id="@+id/RadioSpring"/>
+
+        <RadioButton
+            android:id="@+id/RadioSummer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여름" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가을"
+            android:id="@+id/RadioFall"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="겨울"
+            android:id="@+id/RadioWinter"/>
+
+    </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
